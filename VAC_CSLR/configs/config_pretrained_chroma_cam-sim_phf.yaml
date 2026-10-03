@@ -1,0 +1,70 @@
+feeder: dataset.dataloader_gn_chroma_int_npz_cam-sim_phfps.BaseFeeder
+phase: train
+dataset: captar-libras_10-12
+
+num_epoch: 101
+work_dir: ./work_dir/captar-libras_10-12_pretrained_c_gn_int-npz_cam-sim_phf/
+batch_size: 2
+# grad_accumulation_steps: Number of batches for which gradients are accumulated before performing a weights update.
+grad_accumulation_steps: 2
+random_seed: 0
+test_batch_size: 1
+num_worker: 32
+device: 0
+log_interval: 50
+eval_interval: 1
+save_interval: 5
+
+# python in default
+#evaluate_tool: sclite
+evaluate_tool: python
+loss_weights:
+  SeqCTC: 1.0
+  # VAC
+  # ConvCTC: 1.0
+  # Dist: 10.0
+load_weights: './work_dir/phoenix_weights/resnet18_vac_smkd_dev_19.80_epoch35_model.pt'
+ignore_model_weights: ['classifier.weight', 'conv1d.fc.weight']
+
+optimizer_args:
+  optimizer: Adam
+  base_lr: 0.0001
+  step: [ 40, 65, 80, 90, 95]
+  learning_ratio: 1
+  weight_decay: 0.0001
+  start_epoch: 0
+  nesterov: False
+
+feeder_args:
+  mode: 'train'
+  datatype: 'video'
+  num_gloss: -1
+  drop_ratio: 1.0
+  cam_sim_kwargs:
+      percentile_equalization:
+        percentile_range: [0.80, 1]
+      brightness:
+        brightness_factor: [0.2, 2.5]
+      contrast:
+        contrast_factor: [0.2, 2]
+      gaussian_noise: 
+        mean: 0
+        std_dev: 5
+      sharpness: 
+        sharpness_factor: [0.3, 1.8]
+      perspective_transform:
+        max_shift: 20
+
+model: slr_network.SLRModel
+decode_mode: beam
+model_args:
+  c2d_type: resnet18
+  conv_type: 2
+  use_bn: 1
+  # SMKD
+  share_classifier: True
+  weight_norm: True
+
+wandb_args:
+  active: True
+  wandb_key: './configs/wandb.key'

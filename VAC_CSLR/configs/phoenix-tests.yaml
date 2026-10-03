@@ -1,0 +1,5 @@
+# Utilzado para realizar inferencia no dataset do captar com glosas do phoenix
+dataset_root: ./datasets_srv/captar-libras_10-12
+dict_path: ./preprocess/phoenix2014/gloss_dict.npy
+evaluation_dir: ./evaluation/slr_eval
+evaluation_prefix: phoenix2014-groundtruth

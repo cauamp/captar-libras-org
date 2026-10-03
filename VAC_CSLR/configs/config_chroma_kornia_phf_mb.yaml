@@ -1,0 +1,113 @@
+feeder: dataset.dataloader_in_chroma_int_npz_kornia_phfps_mb.BaseFeeder
+phase: train
+dataset: captar-libras_10-12
+
+num_epoch: 101
+work_dir: ./work_dir/captar-libras_10-12_c_in_int-npz_kornia_phf_mb/
+batch_size: 2
+# grad_accumulation_steps: Number of batches for which gradients are accumulated before performing a weights update.
+grad_accumulation_steps: 2
+random_seed: 0
+test_batch_size: 1
+num_worker: 32
+device: 0
+log_interval: 50
+eval_interval: 1
+save_interval: 5
+# python in default
+#evaluate_tool: sclite
+evaluate_tool: python
+loss_weights:
+  SeqCTC: 1.0
+  # VAC
+  # ConvCTC: 1.0
+  # Dist: 10.0
+load_weights: ''
+
+optimizer_args:
+  optimizer: Adam
+  base_lr: 0.0001
+  step: [ 40, 65, 80, 90, 95]
+  learning_ratio: 1
+  weight_decay: 0.0001
+  start_epoch: 0
+  nesterov: False
+
+feeder_args:
+  kornia_kwargs:
+      affine:
+        degrees: 5
+        keepdim: true
+        p: 0.5
+        same_on_batch: true
+        translate:
+        - 0.05
+        - 0.05
+      brightness:
+        brightness:
+        - 0.3
+        - 1.7
+        clip_output: true
+        keepdim: true
+        p: 0.5
+        same_on_batch: true
+      contrast:
+        clip_output: true
+        contrast:
+        - 0.5
+        - 1.5
+        keepdim: true
+        p: 0.5
+        same_on_batch: true
+      gaussian_noise:
+        keepdim: true
+        mean: 0
+        p: 1
+        same_on_batch: true
+        std: 0.6
+      perspective:
+        distortion_scale: 0.2
+        keepdim: true
+        p: 0.1
+        same_on_batch: true
+      planckian_jitter:
+        keepdim: true
+        mode: blackbody
+        p: 0.05
+        same_on_batch: true
+      plasma_brightness:
+        intensity:
+        - 0.0
+        - 0.6
+        keepdim: true
+        p: 0.1
+        roughness:
+        - 0.1
+        - 0.7
+        same_on_batch: true
+      sharpness:
+        keepdim: true
+        p: 0.5
+        same_on_batch: true
+        sharpness:
+        - 0.4
+        - 1.6
+  mode: 'train'
+  datatype: 'video'
+  num_gloss: -1
+  drop_ratio: 1.0
+
+model: slr_network.SLRModel
+decode_mode: beam
+model_args:
+  num_classes: 1296
+  c2d_type: resnet18
+  conv_type: 2
+  use_bn: 1
+  # SMKD
+  share_classifier: True
+  weight_norm: True
+
+wandb_args:
+  active: False
+  wandb_key: './configs/wandb.key'

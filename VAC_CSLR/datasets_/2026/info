@@ -1,0 +1,9 @@
+Number of recorded videos 27632
+Number of videos in /draft-hdd-projects/captarlibras_finep/cauamagalhaes/preprocess_branch/captar-libras-recog-sinal/0_baselines/VAC_CSLR/ELAN/consistency_check-2026/[Captar-Libras] Lista de sentenças e pessoas informantes.xlsx: 27707
+Number of 'missing' videos (tests and non existing .avi): 123
+Number of videos before 'consistent' filter : 26900
+Number of videos after 'consistent' filter: 24203
+Dataset size before 'signal' videos: 24203
+Train Size: 19845
+Test Size: 2176
+Validate Size: 2182

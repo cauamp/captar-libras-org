@@ -1,0 +1,13 @@
+,value
+total_sentences,24626
+total_gloss_tokens,59163
+unique_glosses,417
+hapax_legomena,1
+hapax_ratio,0.0024
+avg_sentence_length,2.4
+median_sentence_length,2
+max_sentence_length,17
+min_sentence_length,1
+std_sentence_length,1.66
+most_frequent_gloss,DOR
+most_frequent_count,4923

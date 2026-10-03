@@ -1,0 +1,5 @@
+dataset_root: ./datasets_srv/captar-libras_16-10
+dict_path: ./preprocess/captar-libras_16-10/gloss_dict.npy
+evaluation_dir: ./evaluation/slr_eval
+evaluation_prefix: captar-libras_16-10-groundtruth
+use_ctrl: True

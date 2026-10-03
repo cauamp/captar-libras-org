@@ -1,0 +1,4 @@
+dataset_root: ./datasets_ssd_gb/captar-libras_17-05_claro
+dict_path: ./preprocess/captar-libras_22-08/gloss_dict.npy
+evaluation_dir: ./evaluation/slr_eval
+evaluation_prefix: captar-libras-groundtruth

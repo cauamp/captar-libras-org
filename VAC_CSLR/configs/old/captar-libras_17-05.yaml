@@ -1,0 +1,4 @@
+dataset_root: ./datasets_ssd/captar-libras_17-05
+dict_path: ./preprocess/captar-libras_17-05/gloss_dict.npy
+evaluation_dir: ./evaluation/slr_eval
+evaluation_prefix: captar-libras_17-05_res18

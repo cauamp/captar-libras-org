@@ -1,0 +1,378 @@
+id;sentence
+P01;que você estar sentir que te fazer procurar hospital  
+1;alteração estado mental  
+2;confusão  
+3;alteração comportamental  
+4;convulsão  
+5;dor cabeça  
+6;dor pescoço  
+7;dor peito  
+8;dor costas  
+9;dor lombar  
+10;dor barriga  
+11;dor garganta  
+12;dor braço  
+13;dor perna  
+14;dor panturrilha  
+15;dor pé  
+16;falta ar  
+17;chieira  
+18;dificuldade respirar  
+19;palpitação  
+20;desmaio  
+21;diarreia  
+22;diarreia sangue  
+23;náusea  
+24;vômito  
+25;fezes escurecer  
+26;tosse  
+27;nariz escorrer  
+28;nariz obstruir  
+29;inchaço  
+30;ferida pele  
+31;mancha pele  
+32;pele mancha vermelho  
+33;coceira  
+34;febre  
+35;calafrio  
+36;excesso suor  
+37;glicemia alterar  
+38;tentativa suicídio  
+39;mordedura  
+40;mordida cachorro  
+41;mordida gato  
+42;picada cobra  
+43;picada escorpião  
+44;pressão arterial alterar  
+45;problema olho  
+46;problema ouvido  
+47;ardor urinar  
+48;urina solto  
+49;urinar pouco  
+50;urinar muito  
+51;urina escuro  
+52;urina espum  
+53;sangue urina  
+54;sangramento boca  
+55;sangramento nariz  
+56;sangramento fezes  
+57;tonteira  
+58;traum físico  
+59;traum psicológico  
+60;agressão  
+61;queimadura  
+62;lesão arma branca  
+63;lesão arma fogo  
+64;iminência trabalho parto  
+65;trabalho parto ativo  
+66;sangramento vaginal  
+67;vômito sangue  
+P02;quando começar  
+68;15 minuto  
+69;30 minuto  
+70;1 hora  
+71;2 hora  
+72;2 mês  
+P03;como começar que você estar fazer momento começar  
+73;comer  
+74;beber  
+75;tossir  
+76;limpar casa  
+77;praticar exercício físico  
+78;repouso  
+79;estar assentada  
+80;estar mudar posição sentada para pé  
+81;não lembrar  
+P04;qual tempo duração  
+82;6 hora  
+83;1 dia  
+84;3 dia  
+85;1 semana  
+86;1 mês  
+P05;por que você procurar atendimento momento haver piora quadro  
+87;sim  
+88;não  
+P06.1;onde ser dor  
+P06.2;como ser dor  
+P06.3;dor ser como ser peso  
+P06.4;dor ser como ser queimação  
+P06.5;dor ser como ser fincada  
+P06.6;dor ser como ser choque  
+89;dor lado cabeça  
+90;dor ouvido  
+91;dor dois lado cabeça  
+92;dor testa  
+93;dor nuca  
+94;dor ouvido direito esquerdo  
+95;dor olho  
+96;dor meio barriga  
+97;dor lado direito esquerdo barriga  
+98;dor bexiga  
+99;dor baixo ventre  
+100;dor virilha  
+101;dor ombro  
+102;dor braço direito esquerdo  
+103;dor joelho direito esquerdo  
+104;dor perna direito esquerdo  
+105;dor testículo direito esquerdo  
+106;dor latejante  
+107;dor profundo  
+108;dor superficial  
+109;dor lancinante  
+110;dor aperto  
+111;dor peso  
+112;dor queimação  
+113;dor pontada  
+114;dor choque  
+115;cólica menstrual  
+116;cólica  
+P07;junto sintoma você sentir mais algum coisa  
+117;sudorese  
+118;lacrimejamento  
+119;mal-estar  
+120;visão dupla  
+121;mancha vista  
+122;aumento vontade urinar  
+123;zumbido  
+124;gás  
+P08.1;existir algum fator piora  
+125;comer alimento ácido picante  
+126;beber bebida alcoólica  
+127;comer alimento gorduroso  
+128;local barulho  
+129;local luminosidade excessivo  
+130;fazer esforço físico  
+131;período menstrual  
+132;espirrar  
+133;mastigar  
+134;mastigar  
+135;engolir  
+136;andar  
+137;estresse  
+138;apertar  
+139;mexer braço  
+140;mexer perna  
+141;mexer pescoço  
+142;posição corpo piorar dor  
+P08.2;existir algum fator melhora  
+143;deitar  
+144;colocar água frio  
+145;colocar água quente  
+146;usar medicamento  
+147;ficar jejum  
+148.1;a  
+148.2;b  
+148.3;c  
+148.4;d  
+148.5;e  
+148.6;f  
+148.7;g  
+148.8;h  
+148.9;i  
+148.10;j  
+148.11;k  
+148.12;l  
+148.13;m  
+148.14;n  
+148.15;o  
+148.16;p  
+148.17;q  
+148.18;r  
+148.19;s  
+148.20;t  
+148.21;u  
+148.22;v  
+148.23;w  
+148.24;x  
+148.25;y  
+148.26;z  
+149;devagar  
+150;entender  
+151;obrigado  
+152;obrigado  
+153;repetir por favor  
+154;parar  
+155;parar  
+156;não entender  
+157;continuar  
+P09.1;dor peito falta ar piorar fazer esforço físico  
+P09.2;dor piorar subir morro  
+P09.3;piorar andar plano  
+P09.4;piorar tomar banho  
+P09.5;piorar repouso  
+P09.6;piorar subir escada  
+P09.7;dor peito falta ar melhorar algum medicamento  
+158;piorar subir morro  
+159;não piorar subir morro  
+160;piorar andar plano  
+161;não piorar andar plano  
+162;piorar tomar banho  
+163;não piorar tomar banho  
+164;piorar repouso  
+165;não piorar repouso  
+166;piorar subir escada  
+167;não piorar subir escada  
+168;melhorar medicamento  
+169;não melhorar medicamento  
+P10;1 10 ser 1 dor muito fraco 10 dor insuportável qual intensidade dor  
+170.0;0  
+170.1;1  
+170.2;2  
+170.3;3  
+170.4;4  
+170.5;5  
+170.6;6  
+170.7;7  
+170.8;8  
+170.9;9  
+170.10;10  
+P11.1;ser episódio dor ou ser mais episódio  
+171;ser um vez  
+172;ser vários episódio  
+173;constante  
+P11.2;qual frequência dor  
+P11.3;quando ser primeiro episódio  
+174;3 vez dia  
+175;2 semana  
+176;3 mês  
+177;1 ano  
+178;5 ano  
+P11.4;como ser evolução dor longo tempo haver aumento intensidade  
+P11.5;haver aumento duração dor  
+P12;dor ter localização fixo ou espalhar algum lugar  
+179;dor ser fixo  
+180;dor irradiar nuca  
+181;dor irradiar pescoço  
+182;dor irradiar mandíbula  
+183;irradiar ombro  
+184;irradiar braço  
+185;irradiar barriga  
+186;dor irradiar costas  
+187;dor irradiar virilha  
+188;dor irradiar coxa  
+189;dor irradiar perna  
+P13.1;dor piorar quando apertar  
+190;piorar quando apertar  
+191;não piorar quando apertar  
+P13.2;piorar quando mudar posição corpo  
+192;dor piorar quando mudar posição corpo  
+193;não piorar quando mudar posição corpo  
+P14;ter dor febre espirro secreção nasal  
+P15.1;ter tosse  
+P15.2;como ser tosse  
+P15.3;ser com ou sem catarro  
+P15.4;qual cor ser catarro  
+194;tosse seco  
+195;sem catarro  
+196;tosse com catarro  
+197;catarro transparente  
+198;catarro branco  
+199;catarro amarelado  
+200;catarro esverdeado  
+201;catarro vermelho  
+202;catarro com raia sangue  
+P16;não haver espirro tosse sentir ardor urinar  
+P17.1;vacinar covid-19  
+P17.2;quantidade dose  
+P17.3;vacinar gripe  
+P17.4;trazer cartão vacina  
+203;não vacinar covid-19  
+204;2 dose  
+205;3 dose  
+206;4 dose  
+207;não vacinar gripe  
+208;não trazer cartão vacina  
+P20;trazer algum relatório médico  
+P21.1;trazer receita médica  
+P21.2;usar algum medicamento  
+241;trazer receita médica  
+242;usar medicamento  
+243;não trazer receita médica  
+244;não usar medicamento  
+P18.1;estar enjoado ou vomitar  
+P18.2;estar com diarreia  
+P18.3;como ser diarreia  
+P18.4;ter sangue muco pus  
+P18.5;sentir dor barriga  
+209;não estar vontade vomitar  
+210;amolecido  
+211;semilíquido  
+212;líquido  
+213;claro  
+214;brilhante  
+215;espumoso  
+216;explosivo  
+217;branco  
+218;escuro  
+219;com resto comida  
+220;com muco  
+221;com pus  
+222;não sentir dor barriga  
+P19.1;fazer tratamento algum doença  
+223;diabetes  
+224;infarto  
+225;arritmia  
+226;pressão alta  
+227;asma  
+228;aids  
+229;câncer  
+230;depressão  
+231;depressão  
+232;ansiedade  
+233;avc  
+234;tuberculose  
+235;obesidade  
+236;cirrose  
+237;insuficiência renal  
+238;hipotireoidismo  
+239;alcoolismo  
+240;fumnte  
+P22.1;ter algum alergia  
+P22.2;ter alergia algum medicamento  
+P22.3;qual medicamento  
+245;ter alergia ácaro  
+246;fungo  
+247;alergia pólen  
+248;cachorro  
+249;gato  
+250;picada inseto  
+251;látex  
+252;leite  
+253;ovo  
+254;fruto mar  
+255;trigo  
+256;alergia amendoim  
+257;não ter alergia nenhum medicamento  
+258;não ter alergia  
+P23.1;fumr  
+P23.2;quanto tempo  
+P23.3;quantidade cigarro dia  
+259;fumr sim  
+260;não fumr  
+261;um ano  
+262;2 ano  
+263;10 ano  
+P24.1;ingerir bebida alcoólica  
+P24.2;qual bebida  
+P24.3;quantidade bebida  
+264;cerveja  
+265;vinho  
+266;licor  
+267;vodka  
+268;uísque  
+269;cachaça  
+270;gin  
+271;champanhe  
+272;um lata todo dia  
+273;um lata um vez por semana  
+274;dois lata dois vez por semana  
+275;um garrafa todo dia  
+276;um garrafa um vez por semana  
+277;dois garrafa dois vez por semana  
+278;um dose todo dia  
+279;dois dose dois vez semana  
+280;um taça vinho um vez semana  
+281;um taça vinho todo dia  
+282;um copo cheio todo dia  
+283;um copo um vez semana  
+P25.1;você fazer algum cirurgia se sim qual  

@@ -1,0 +1,378 @@
+id;sentence
+P01;O que você está sentindo que te fez procurar o hospital?	
+1;Alteração do estado mental	
+2;Confusão	
+3;Alteração comportamental	
+4;Convulsão	
+5;Dor de cabeça	
+6;Dor no pescoço	
+7;Dor no peito	
+8;Dor nas costas	
+9;Dor lombar	
+10;Dor na barriga	
+11;Dor de garganta	
+12;Dor no braço	
+13;Dor na perna	
+14;Dor na panturrilha	
+15;Dor no pé	
+16;Falta de ar	
+17;Chieira	
+18;Dificuldade para respirar	
+19;Palpitação	
+20;Desmaio	
+21;Diarreia	
+22;Diarreia com sangue	
+23;Náusea	
+24;Vômito	
+25;Fezes escurecidas	
+26;Tosse	
+27;Nariz escorrendo	
+28;Nariz obstruído	
+29;Inchaço	
+30;Feridas na pele	
+31;Manchas na pele	
+32;Pele com manchas vermelhas	
+33;Coceira	
+34;Febre	
+35;Calafrio	
+36;Excesso de suor	
+37;Glicemia alterada	
+38;Tentativa de suicídio	
+39;Mordeduras	
+40;Mordida de cachorro	
+41;Mordida de gato	
+42;Picada de cobra	
+43;Picada de escorpião	
+44;Pressão arterial alterada	
+45;Problema nos olhos	
+46;Problema nos ouvidos	
+47;Ardor para urinar	
+48;Urina solta	
+49;Urinando pouco	
+50;Urinando muito	
+51;Urina escura	
+52;Urina com espuma	
+53;Sangue na urina	
+54;Sangramento pela boca	
+55;Sangramento pelo nariz	
+56;Sangramento nas fezes	
+57;Tonteira	
+58;Trauma físico	
+59;Trauma psicológico	
+60;Agressão	
+61;Queimaduras	
+62;Lesão por arma branca	
+63;Lesão por arma de fogo	
+64;Iminência de trabalho de parto	
+65;Trabalho de parto ativo	
+66;Sangramento vaginal	
+67;Vômitos com sangue	
+P02;Quando começou?	
+68;15 minutos	
+69;30 minutos	
+70;1 hora	
+71;2 horas	
+72;2 meses	
+P03;Como começou? O que você estava fazendo no momento que começou?	
+73;Comendo	
+74;Bebendo	
+75;Tossindo	
+76;Limpando a casa	
+77;Praticando exercício físico	
+78;Em repouso	
+79;Estava assentada	
+80;Estava mudando de posição de sentada para de pé	
+81;Não lembro	
+P04;Qual é o tempo de duração?	
+82;6 horas	
+83;1 dia	
+84;3 dias	
+85;1 semana	
+86;1 mês	
+P05;Por que você procurou atendimento nesse momento? Houve piora do quadro?	
+87;Sim	
+88;Não	
+P06.1;Onde é a dor?	
+P06.2;Como é a dor?	
+P06.3;A dor é como se fosse em peso?	
+P06.4;A dor é como se fosse em queimação?	
+P06.5;A dor é como se fosse em fincada?	
+P06.6;A dor é como se fosse em choque?	
+89;Dor de um lado da cabeça	
+90;Dor no ouvido	
+91;Dor dos dois lados da cabeça	
+92;Dor na testa	
+93;Dor na nuca	
+94;Dor no ouvido direito e esquerdo	
+95;Dor nos olhos	
+96;Dor no meio da barriga	
+97;Dor no lado direito e esquerdo da barriga	
+98;Dor na bexiga	
+99;Dor no baixo ventre	
+100;Dor na virilha	
+101;Dor nos ombros	
+102;Dor no braço direito e esquerdo	
+103;Dor no joelho direito e esquerdo	
+104;Dor na perna direita e esquerda	
+105;Dor nos testículos direito e esquerdo	
+106;Dor latejante	
+107;Dor profunda	
+108;Dor superficial	
+109;Dor lancinante	
+110;Dor em aperto	
+111;Dor em peso	
+112;Dor em queimação	
+113;Dor em pontada	
+114;Dor em choque	
+115;Cólica menstrual	
+116;Cólica	
+P07;Junto desse sintoma, você sente mais alguma coisa?	
+117;Sudorese	
+118;Lacrimejamento	
+119;Mal-estar	
+120;Visão dupla	
+121;Mancha na vista	
+122;Aumento da vontade de urinar	
+123;Zumbido	
+124;Gases	
+P08.1;Existe algum fator de piora?	
+125;Comer alimentos ácidos e picantes	
+126;Beber bebidas alcoólicas	
+127;Comer alimentos gordurosos	
+128;Locais com barulho	
+129;Locais com luminosidade excessiva	
+130;Fazer esforço físico	
+131;Período menstrual	
+132;Espirrar	
+133;Mastigar	
+134;Mastigar	
+135;Engolir	
+136;Andar	
+137;Estresse	
+138;Apertar	
+139;Mexer o braço	
+140;Mexer as pernas	
+141;Mexer o pescoço	
+142;A posição do corpo piora a dor	
+P08.2;Existe algum fator de melhora?	
+143;Deitar	
+144;Colocar água fria	
+145;Colocar água quente	
+146;Usar medicamento	
+147;Ficar em jejum	
+148.1;A
+148.2;B
+148.3;C
+148.4;D
+148.5;E
+148.6;F
+148.7;G
+148.8;H
+148.9;I
+148.10;J
+148.11;K
+148.12;L
+148.13;M
+148.14;N
+148.15;O
+148.16;P
+148.17;Q
+148.18;R
+148.19;S
+148.20;T
+148.21;U
+148.22;V
+148.23;W
+148.24;X
+148.25;Y
+148.26;Z
+149;Devagar	
+150;Entendi	
+151;Obrigado	
+152;Obrigado	
+153;Repita, por favor	
+154;Pare	
+155;Pare	
+156;Não entendi	
+157;Continue	
+P09.1;A dor no peito ou falta de ar piora ao fazer esforço físico?	
+P09.2;A dor piora ao subir morro?	
+P09.3;Piora ao andar no plano?	
+P09.4;Piora ao tomar banho?	
+P09.5;Piora em repouso?	
+P09.6;Piora ao subir escada?	
+P09.7;A dor no peito ou a falta de ar melhorou com algum medicamento?	
+158;Piora ao subir morro	
+159;Não piora ao subir morro	
+160;Piora ao andar no plano	
+161;Não piora ao andar no plano	
+162;Piora ao tomar banho	
+163;Não piora ao tomar banho	
+164;Piora em repouso	
+165;Não piora em repouso	
+166;Piora ao subir escada	
+167;Não piora ao subir escada	
+168;Melhorou com medicamento	
+169;Não melhorou com medicamento	
+P10;De 1 a 10, sendo 1 uma dor muito fraca e 10 uma dor insuportável, qual é a intensidade da dor?	
+170.0;0
+170.1;1
+170.2;2
+170.3;3
+170.4;4
+170.5;5
+170.6;6
+170.7;7
+170.8;8
+170.9;9
+170.10;10
+P11.1;Foi um episódio de dor ou foram mais episódios?	
+171;Foi uma vez	
+172;Foram vários episódios	
+173;Constante	
+P11.2;Qual a frequência da dor? 	
+P11.3;Quando foi o primeiro episódio?	
+174;3 vezes ao dia	
+175;Duas semanas	
+176;Três meses	
+177;Um ano	
+178;Cinco anos	
+P11.4;Como foi a evolução da dor ao longo do tempo? Houve aumento da intensidade?	
+P11.5;Houve aumento da duração da dor?	
+P12;A dor tem uma localização fixa ou se espalha para algum lugar?	
+179;A dor é fixa	
+180;A dor irradia para a nuca	
+181;A dor irradia para o pescoço	
+182;A dor irradia para a mandíbula	
+183;Irradia para o ombro	
+184;Irradia para o braço	
+185;Irradia para a barriga	
+186;A dor irradia para as costas	
+187;A dor irradia para a virilha	
+188;A dor irradia para a coxa	
+189;A dor irradia para a perna	
+P13.1;A dor piora quando aperta?	
+190;Piora quando aperta	
+191;Não piora quando aperta	
+P13.2;Piora quando muda a posição do corpo?	
+192;A dor piora quando muda a posição do corpo	
+193;Não piora quando muda a posição do corpo	
+P14;Tem dor, febre, espirros ou secreção nasal?	
+P15.1;Tem tosse?	
+P15.2;Como é a tosse?	
+P15.3;É com ou sem catarro?	
+P15.4;Qual cor é o catarro?	
+194;Tosse seca	
+195;Sem catarro	
+196;Tosse com catarro	
+197;Catarro transparente	
+198;Catarro branco	
+199;Catarro amarelado	
+200;Catarro esverdeado	
+201;Catarro vermelho	
+202;Catarro com raias de sangue	
+P16;Se não há espirro e tosse, sente ardor para urinar?	
+P17.1;Você vacinou para covid-19?	
+P17.2;Quantas doses?	
+P17.3;Você vacinou para gripe?	
+P17.4;Trouxe cartão de vacina?	
+203;Não vacinei para COVID-19	
+204;2 doses	
+205;3 doses	
+206;4 doses	
+207;Não vacinei para gripe	
+208;Não trouxe cartão de vacina	
+P20;Você trouxe algum relatório médico?	
+P21.1;Você trouxe receita médica?	
+P21.2;Está usando algum medicamento?	
+241;Trouxe receita médica	
+242;Uso medicamento	
+243;Não trouxe receita médica	
+244;Não uso medicamento	
+P18.1;Está enjoado ou com vômitos?	
+P18.2;Está com diarreia?	
+P18.3;Como é a diarreia?	
+P18.4;Tem sangue, muco ou pus?	
+P18.5;Sente dor na barriga?	
+209;Não estou com vontade de vomitar	
+210;Amolecida	
+211;Semilíquida	
+212;Líquida	
+213;Clara	
+214;Brilhante	
+215;Espumosa	
+216;Explosiva	
+217;Branco	
+218;Escura	
+219;Com resto de comida	
+220;Com muco	
+221;Com pus	
+222;Não sinto dor na barriga	
+P19.1;Você faz tratamento para alguma doença?	
+223;Diabetes	
+224;Infarto	
+225;Arritmia	
+226;Pressão alta	
+227;Asma	
+228;Aids	
+229;Câncer	
+230;Depressão	
+231;Depressão	
+232;Ansiedade	
+233;AVC	
+234;Tuberculose	
+235;Obesidade	
+236;Cirrose	
+237;Insuficiência renal	
+238;Hipotireoidismo	
+239;Alcoolismo	
+240;Fumante	
+P22.1;Você tem alguma alergia?	
+P22.2;Você tem alergia a algum medicamento?	
+P22.3;Qual medicamento?	
+245;Tenho alergia a ácaros	
+246;Fungos	
+247;Alergia a pólen	
+248;Cachorro	
+249;Gato	
+250;Picada de insetos	
+251;Látex	
+252;Leite	
+253;Ovo	
+254;Frutos do mar	
+255;Trigo	
+256;Alergia a amendoim	
+257;Não tenho alergia a nenhum medicamento	
+258;Não tenho alergia	
+P23.1;Você fuma?	
+P23.2;Quanto tempo?	
+P23.3;Quantos cigarros por dia?	
+259;Fumo sim	
+260;Não fumo	
+261;Um ano	
+262;2 anos	
+263;10 anos	
+P24.1;Ingere bebida alcoólica?	
+P24.2;Quais bebidas?	
+P24.3;Quantas bebidas? 	
+264;Cerveja	
+265;Vinho	
+266;Licor	
+267;Vodka	
+268;Uísque	
+269;Cachaça	
+270;Gin	
+271;Champanhe	
+272;Uma lata todo dia	
+273;Uma lata uma vez por semana 	
+274;Duas latas duas vezes por semana	
+275;Uma garrafa todos os dias	
+276;Uma garrafa uma vez por semana	
+277;Duas garrafas duas vezes por semana	
+278;Uma dose todos os dias	
+279;Duas doses duas vezes na semana	
+280;Uma taça de vinho uma vez na semana	
+281;Uma taça de vinho todos os dias	
+282;Um copo cheio todos os dias	
+283;Um copo uma vez na semana	
+P25.1;Você fez alguma cirurgia? Se sim, qual?	

@@ -1,0 +1,86 @@
+# Inference Report
+
+## BLEU Scores
+
+## Checkpoint: work_dir/stage2/captar_example-1/best_result_checkpoint_5_93.7733.pt
+## Videos: datasets_srv/testes_cam_zed/*.avi
+- **BLEU-1**: 13.0100
+- **BLEU-2**: 10.9758
+- **BLEU-3**: 9.1876
+- **BLEU-4**: 6.4572
+## Inferences
+
+| Video | Output | Expected |
+|-------|--------|----------|
+| 31-03-2025_17-38-54_p0998_s39_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em catarro? | Mordeduras |
+| 31-03-2025_17-48-57_p0998_s60_b1_RAW--ZED-RGB_FRONT | Houve algum aumento da dor? | Agressão |
+| 31-03-2025_17-26-39_p0998_s12_b1_RAW--ZED-RGB_FRONT | Dor no braço | Dor no braço |
+| 31-03-2025_17-47-19_p0998_s57_b1_RAW--ZED-RGB_FRONT | Tonteira | Tonteira |
+| 31-03-2025_17-22-04_p0998_s1_b1_RAW--ZED-RGB_FRONT | Alteração do estado mental | Alteração do estado mental |
+| 31-03-2025_17-50-07_p0998_s63_b1_RAW--ZED-RGB_FRONT | Sem catarro | Lesão por arma de fogo |
+| 31-03-2025_17-22-21_p0998_s2_b1_RAW--ZED-RGB_FRONT | Desmaio | Confusão |
+| 31-03-2025_17-41-23_p0998_s43_b1_RAW--ZED-RGB_FRONT | Dor no pé | Picada de escorpião |
+| 31-03-2025_17-33-42_p0998_s22_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em aperto? | Diarreia com sangue |
+| 31-03-2025_17-35-29_p0998_s27_b1_RAW--ZED-RGB_FRONT | Vinho | Nariz escorrendo |
+| 31-03-2025_17-38-03_p0998_s36_b1_RAW--ZED-RGB_FRONT | Hipotireoidismo | Excesso de suor |
+| 31-03-2025_17-47-07_p0998_s56_b1_RAW--ZED-RGB_FRONT | Diarreia | Sangramento nas fezes |
+| 31-03-2025_17-44-09_p0998_s49_b1_RAW--ZED-RGB_FRONT | A dor piora quando piora? | Urinando pouco |
+| 31-03-2025_17-26-06_p0998_s10_b1_RAW--ZED-RGB_FRONT | Dor no pé | Dor na barriga |
+| 31-03-2025_17-33-11_p0998_s20_b1_RAW--ZED-RGB_FRONT | Tonteira | Desmaio |
+| 31-03-2025_17-36-49_p0998_s32_b1_RAW--ZED-RGB_FRONT | Catarro vacinou para covid-19? | Pele com manchas vermelhas |
+| 31-03-2025_17-28-21_p0998_s14_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em peso? | Dor na panturrilha |
+| 31-03-2025_17-48-42_p0998_s59_b1_RAW--ZED-RGB_FRONT | Trauma psicológico | Trauma psicológico |
+| 31-03-2025_17-38-22_p0998_s37_b1_RAW--ZED-RGB_FRONT | Fazer esforço físico | Glicemia alterada |
+| 31-03-2025_17-43-53_p0998_s48_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em aperto? | Urina solta |
+| 31-03-2025_17-41-51_p0998_s45_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em aperto? | Problema nos olhos |
+| 31-03-2025_17-46-27_p0998_s53_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em aperto? | Sangue na urina |
+| 31-03-2025_17-36-27_p0998_s31_b1_RAW--ZED-RGB_FRONT | Cólica | Manchas na pele |
+| 31-03-2025_17-35-55_p0998_s29_b1_RAW--ZED-RGB_FRONT | Catarro com raias de sangue | Inchaço |
+| 31-03-2025_17-38-40_p0998_s38_b1_RAW--ZED-RGB_FRONT | Tem dor ou falta de ar? | Tentativa de suicídio |
+| 31-03-2025_17-24-02_p0998_s4_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em peso? | Convulsão |
+| 31-03-2025_17-25-18_p0998_s7_b1_RAW--ZED-RGB_FRONT | Dor na testa | Dor no peito |
+| 31-03-2025_17-34-43_p0998_s25_b1_RAW--ZED-RGB_FRONT | Foi um episódio de dor ou foram mais episódios? | Fezes escurecidas |
+| 31-03-2025_17-48-28_p0998_s58_b1_RAW--ZED-RGB_FRONT | Catarro preto | Trauma físico |
+| 31-03-2025_17-44-59_p0998_s51_b1_RAW--ZED-RGB_FRONT | Fazer esforço para fazer alguma coisa? | Urina escura |
+| 31-03-2025_17-31-54_p0998_s17_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em choque? | Chieira |
+| 31-03-2025_17-41-09_p0998_s42_b1_RAW--ZED-RGB_FRONT | Duas vezes por semana | Picada de cobra |
+| 31-03-2025_17-26-23_p0998_s11_b1_RAW--ZED-RGB_FRONT | Dor de garganta | Dor de garganta |
+| 31-03-2025_17-50-51_p0998_s66_b1_RAW--ZED-RGB_FRONT | Quando foi o primeiro episódio? | Sangramento vaginal |
+| 31-03-2025_17-41-36_p0998_s44_b1_RAW--ZED-RGB_FRONT | Faz algum exame? | Pressão arterial alterada |
+| 31-03-2025_17-49-24_p0998_s61_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em peso? | Queimaduras |
+| 31-03-2025_17-54-12_p0998_s70_b1_RAW--ZED-RGB_FRONT | 1 hora | 1 hora |
+| 31-03-2025_17-33-27_p0998_s21_b1_RAW--ZED-RGB_FRONT | Diarreia | Diarreia |
+| 31-03-2025_17-32-12_p0998_s18_b1_RAW--ZED-RGB_FRONT | É com ou sem catarro? | Dificuldade para respirar |
+| 31-03-2025_17-36-11_p0998_s30_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em peso? | Feridas na pele |
+| 31-03-2025_17-39-19_p0998_s41_b1_RAW--ZED-RGB_FRONT | Dor no pé | Mordida de gato |
+| 31-03-2025_17-37-12_p0998_s33_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em peso? | Coceira |
+| 31-03-2025_17-51-05_p0998_s67_b1_RAW--ZED-RGB_FRONT | Tem algum sintoma? | Vômitos com sangue |
+| 31-03-2025_17-42-39_p0998_s47_b1_RAW--ZED-RGB_FRONT | É com ou sem catarro? | Ardor para urinar |
+| 31-03-2025_17-49-45_p0998_s62_b1_RAW--ZED-RGB_FRONT | Fazer esforço para fazer uma vontade de vomitar? | Lesão por arma branca |
+| 31-03-2025_17-21-44_p0998_sP01_b1_RAW--ZED-RGB_FRONT | Qual é o tempo de duração? | O que você está sentindo que te fez procurar o hospital? |
+| 31-03-2025_17-24-25_p0998_s5_b1_RAW--ZED-RGB_FRONT | Tonteira | Dor de cabeça |
+| 31-03-2025_17-39-06_p0998_s40_b1_RAW--ZED-RGB_FRONT | Não piora com dor | Mordida de cachorro |
+| 31-03-2025_17-26-55_p0998_s13_b1_RAW--ZED-RGB_FRONT | Fazer esforço físico? | Dor na perna |
+| 31-03-2025_17-37-45_p0998_s35_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em peso? | Calafrio |
+| 31-03-2025_17-42-05_p0998_s46_b1_RAW--ZED-RGB_FRONT | A dor piora ao andar no plano? | Problema nos ouvidos |
+| 31-03-2025_17-46-52_p0998_s55_b1_RAW--ZED-RGB_FRONT | Lesão por dor ou dor de cabeça? | Sangramento pelo nariz |
+| 31-03-2025_17-33-59_p0998_s23_b1_RAW--ZED-RGB_FRONT | Tonteira | Náusea |
+| 31-03-2025_17-35-05_p0998_s26_b1_RAW--ZED-RGB_FRONT | Catarro esverdeado | Tosse |
+| 31-03-2025_17-46-40_p0998_s54_b1_RAW--ZED-RGB_FRONT | Fazer esforço para respirar? | Sangramento pela boca |
+| 31-03-2025_17-44-30_p0998_s50_b1_RAW--ZED-RGB_FRONT | Catarro preto | Urinando muito |
+| 31-03-2025_17-25-34_p0998_s8_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em peso? | Dor nas costas |
+| 31-03-2025_17-46-07_p0998_s52_b1_RAW--ZED-RGB_FRONT | Urina com espuma | Urina com espuma |
+| 31-03-2025_17-25-48_p0998_s9_b1_RAW--ZED-RGB_FRONT | Dor lombar | Dor lombar |
+| 31-03-2025_17-25-03_p0998_s6_b1_RAW--ZED-RGB_FRONT | Dor no pescoço | Dor no pescoço |
+| 31-03-2025_17-22-32_p0998_s3_b1_RAW--ZED-RGB_FRONT | É com ou sem catarro? | Alteração comportamental |
+| 31-03-2025_17-52-40_p0998_s69_b1_RAW--ZED-RGB_FRONT | Sem catarro | 30 minutos |
+| 31-03-2025_17-35-43_p0998_s28_b1_RAW--ZED-RGB_FRONT | Apertar | Nariz obstruído |
+| 31-03-2025_17-37-27_p0998_s34_b1_RAW--ZED-RGB_FRONT | Febre | Febre |
+| 31-03-2025_17-50-26_p0998_s64_b1_RAW--ZED-RGB_FRONT | Catarro gredido | Iminência de trabalho de parto |
+| 31-03-2025_17-52-18_p0998_sP02_b1_RAW--ZED-RGB_FRONT | A dor é como se fosse em algum processo? | Quando começou? |
+| 31-03-2025_17-52-30_p0998_s68_b1_RAW--ZED-RGB_FRONT | Andar | 15 minutos |
+| 31-03-2025_17-32-58_p0998_s19_b1_RAW--ZED-RGB_FRONT | Catarro branco | Palpitação |
+| 31-03-2025_17-31-38_p0998_s16_b1_RAW--ZED-RGB_FRONT | Catarro espesso | Falta de ar |
+| 31-03-2025_17-50-39_p0998_s65_b1_RAW--ZED-RGB_FRONT | Sem catarro | Trabalho de parto ativo |
+| 31-03-2025_17-28-38_p0998_s15_b1_RAW--ZED-RGB_FRONT | Quantos episódios? | Dor no pé |
+| 31-03-2025_17-34-17_p0998_s24_b1_RAW--ZED-RGB_FRONT | Você fez alguma cirurgia? | Vômito |

@@ -21,7 +21,9 @@ def seq_train(loader, model, optimizer, device, epoch_idx, recoder, grad_accumul
         vid_lgt = device.data_to_device(data[1])
         label = device.data_to_device(data[2])
         label_lgt = device.data_to_device(data[3])
-        ret_dict = model(vid, vid_lgt, label=label, label_lgt=label_lgt)
+        # multi-stream feeders return (vid, vid_lgt, label, label_lgt, aux, aux_lgt, info)
+        x_aux, len_aux = device.data_to_device(data[4:6]) if len(data) == 7 else (None, None)
+        ret_dict = model(vid, vid_lgt, label=label, label_lgt=label_lgt, x_aux=x_aux, len_aux=len_aux)
         loss = model.criterion_calculation(ret_dict, label, label_lgt)
         if np.isinf(loss.item()) or np.isnan(loss.item()):
             print('Encountered invalid loss value')
@@ -60,8 +62,9 @@ def seq_eval(cfg, loader, model, device, mode, epoch, work_dir, recoder,
         vid_lgt = device.data_to_device(data[1])
         label = device.data_to_device(data[2])
         label_lgt = device.data_to_device(data[3])
+        x_aux, len_aux = device.data_to_device(data[4:6]) if len(data) == 7 else (None, None)
         with torch.no_grad():
-            ret_dict = model(vid, vid_lgt, label=label, label_lgt=label_lgt)
+            ret_dict = model(vid, vid_lgt, label=label, label_lgt=label_lgt, x_aux=x_aux, len_aux=len_aux)
 
         total_info += [file_name.split("|")[0] for file_name in data[-1]]
         total_sent += ret_dict['recognized_sents']

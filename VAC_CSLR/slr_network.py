@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.models as models
 from modules.criterions import SeqKD
-from modules import BiLSTMLayer, TemporalConv
+from modules import BiLSTMLayer, TemporalConv, CrossViewAttention
 import time
 
 class Identity(nn.Module):
@@ -32,7 +32,8 @@ class SLRModel(nn.Module):
             hidden_size=1024, gloss_dict=None, loss_weights=None,
             weight_norm=True, share_classifier=True, freeze_conv2d=False, 
             conv2d_dropout_prob=0, 
-            custom_resnet=False, half_it=False, chunks=1, memory_debug=False
+            custom_resnet=False, half_it=False, chunks=1, memory_debug=False,
+            fusion=None, num_aux_views=1, aux_c2d_type='resnet18', aux_in_channels=1, fusion_heads=8
     ):
         super(SLRModel, self).__init__()
         self.decoder = None
@@ -59,7 +60,29 @@ class SLRModel(nn.Module):
             conv2d_output_channels = 2048  # ResNet50+ final feature size
         else:
             raise ValueError(f"Unsupported ResNet type: {c2d_type}")
-        
+
+        # fusion: None (frontal only), 'multiview' (other RGB views through self.conv2d, shared weights)
+        # or 'depth' (depth through its own encoder). Fused into frontal features before the temporal conv.
+        self.fusion = fusion
+        if fusion == 'multiview':
+            aux_output_channels = conv2d_output_channels
+        elif fusion == 'depth':
+            if torch.__version__ >= "1.9.0":
+                self.aux_conv2d = getattr(models, aux_c2d_type)(weights='IMAGENET1K_V1')
+            else:
+                self.aux_conv2d = getattr(models, aux_c2d_type)(pretrained=True)
+            if aux_in_channels != 3:
+                rgb_weight = self.aux_conv2d.conv1.weight.data
+                self.aux_conv2d.conv1 = nn.Conv2d(aux_in_channels, 64, kernel_size=7, stride=2, padding=3, bias=False)
+                self.aux_conv2d.conv1.weight.data = rgb_weight.mean(1, keepdim=True).repeat(1, aux_in_channels, 1, 1)
+            aux_output_channels = self.aux_conv2d.fc.in_features
+            self.aux_conv2d.fc = Identity()
+        elif fusion is not None:
+            raise ValueError(f"Unsupported fusion type: {fusion}")
+        if fusion is not None:
+            self.cross_attention = CrossViewAttention(conv2d_output_channels, aux_output_channels,
+                                                      num_views=num_aux_views, num_heads=fusion_heads)
+
         self.conv1d = TemporalConv(input_size=conv2d_output_channels,
                                    hidden_size=hidden_size,
                                    conv_type=conv_type,
@@ -83,17 +106,26 @@ class SLRModel(nn.Module):
             if isinstance(g, torch.Tensor):  # Ensure only Tensors are processed
                 g[g != g] = 0
 
-    def masked_bn(self, inputs, len_x):
+    def masked_bn(self, inputs, len_x, encoder=None):
         def pad(tensor, length):
             return torch.cat([tensor, tensor.new(length - tensor.size(0), *tensor.size()[1:]).zero_()])
 
+        encoder = self.conv2d if encoder is None else encoder
         x = torch.cat([inputs[len_x[0] * idx:len_x[0] * idx + lgt] for idx, lgt in enumerate(len_x)])
-        x = self.conv2d(x)
+        x = encoder(x)
         x = torch.cat([pad(x[sum(len_x[:idx]):sum(len_x[:idx + 1])], len_x[0])
                        for idx, lgt in enumerate(len_x)])
         return x
 
-    def forward(self, x, len_x, label=None, label_lgt=None)-> dict:
+    def encode_aux(self, x_aux, len_aux):
+        # x_aux: (B, T_aux, V, C, H, W) -> (B, V, C_feat, T_aux)
+        batch, temp, views = x_aux.shape[:3]
+        inputs = x_aux.transpose(1, 2).reshape(batch * views * temp, *x_aux.shape[3:])
+        encoder = self.conv2d if self.fusion == 'multiview' else self.aux_conv2d
+        feats = self.masked_bn(inputs, len_aux.repeat_interleave(views), encoder)
+        return feats.reshape(batch, views, temp, -1).transpose(2, 3)
+
+    def forward(self, x, len_x, label=None, label_lgt=None, x_aux=None, len_aux=None)-> dict:
         if len(x.shape) == 5:
             # videos
             batch, temp, channel, height, width = x.shape
@@ -103,6 +135,10 @@ class SLRModel(nn.Module):
         else:
             # frame-wise features
             framewise = x
+        if self.fusion is not None:
+            if x_aux is None:
+                raise ValueError(f"fusion='{self.fusion}' requires x_aux and len_aux")
+            framewise = self.cross_attention(framewise, self.encode_aux(x_aux, len_aux), len_aux)
         conv1d_outputs = self.conv1d(framewise, len_x)
         # x: T, B, C
         x = conv1d_outputs['visual_feat']
